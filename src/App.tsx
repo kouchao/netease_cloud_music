@@ -1,4 +1,4 @@
 import React from 'react';
-import Default from '@/layout/default'
+import Default from '@/layouts/default'
 
 export default Default;

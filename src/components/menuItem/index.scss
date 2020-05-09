@@ -1,0 +1,16 @@
+@import '@/scss';
+
+@include b(menu-item) {
+    display: flex;
+    align-items: center;
+
+    @include e(icon) {
+        margin-right: 10px;
+    }
+
+    @include m(active) {
+        margin-right: 10px;
+        color: red
+    }
+
+}

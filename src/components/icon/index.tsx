@@ -14,20 +14,24 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
   /**
    * 大小
    */
-  size?: string
+  size?: string | number
 }
 
-const Icon: React.FunctionComponent<IconProps> = (props) => {
-  const size = props.size || 16
+const Icon: React.FunctionComponent<IconProps> = ({
+  size = 16,
+  onClick,
+  color,
+  name,
+}) => {
   return (
     <svg
       className="icon"
       width={size}
       height={size}
-      onClick={props.onClick}
-      fill={props.color}
+      onClick={onClick}
+      fill={color}
     >
-      <use xlinkHref={`#${props.name}`}></use>
+      <use xlinkHref={`#${name}`}></use>
     </svg>
   )
 }

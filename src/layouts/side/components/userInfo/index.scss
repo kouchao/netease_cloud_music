@@ -1,0 +1,21 @@
+@import '@/scss';
+
+@include b(user-info) {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+
+  @include e(avatar) {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background: #eee;
+    text-align: center;
+    line-height: 80px;
+  }
+
+  @include e(username) {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+}
