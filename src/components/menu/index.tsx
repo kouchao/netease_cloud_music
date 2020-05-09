@@ -1,13 +1,13 @@
 import React, { Children } from 'react'
 
-// import './index.scss'
+import './index.scss'
 interface MenuProps {
   
 }
 
 const Menu: React.FunctionComponent<MenuProps> = ({children}) => {
   return (
-    <ul>
+    <ul className='menu'>
       {children}
     </ul>
   )

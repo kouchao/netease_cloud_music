@@ -10,7 +10,10 @@ function Side() {
         <Navigation></Navigation>
         <UserInfo></UserInfo>
         <Menu>
+            <MenuItem icon='netease' title='发现音乐' active></MenuItem>
             <MenuItem icon='fm' title='私人FM'></MenuItem>
+            <MenuItem icon='video' title='视频'></MenuItem>
+            <MenuItem icon='friend' title='朋友'></MenuItem>
         </Menu>
     </div>
 }
