@@ -10,7 +10,7 @@ const UserInfo: React.FunctionComponent<UserInfoProps> = (props) => {
         <Icon name="user" color="#fff" size='54'></Icon>
       </div>
       <div className='user-info__username'>未登录</div>
-      <Icon name="triangle-right" color="#666"></Icon>
+      <Icon name="arrow-right" color="#666"></Icon>
     </div>
   )
 }
