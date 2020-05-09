@@ -1,19 +1,26 @@
-import React from 'react';
+import React from 'react'
+import './importIcons.js'
+
 import './index.scss'
-
 interface IconProps {
-    /**
-     * 图标名
-     */
-    name: string
-    /**
-     * 颜色
-     */
-    color?: string
+  /**
+   * 图标名
+   */
+  name: string
+  /**
+   * 颜色
+   */
+  color?: string
 }
 
-export default function Icon(props: IconProps) {
-    return <div className='icon' style={{color: props.color}}>
-        {props.name[0]}
-    </div>
+const Icon: React.FunctionComponent<IconProps> = (props) => {
+  return (
+    <span>
+      <svg>
+        <use xlinkHref={`#${props.name}`}></use>
+      </svg>
+    </span>
+  )
 }
+
+export default Icon
