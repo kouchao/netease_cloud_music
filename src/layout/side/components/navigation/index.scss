@@ -1,0 +1,29 @@
+@import '@/scss/base';
+@import '@/scss/mixin/bem';
+
+@include b(nav) {
+    background: #f8f8f8;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include e(item) {
+        @extend .button;
+        padding: 10px;
+        border-radius: 50px;
+
+        &:hover {
+            background: #f2f2f2;
+        }
+
+        @include m(disabled) {
+
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+
+}

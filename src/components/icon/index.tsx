@@ -2,7 +2,7 @@ import React from 'react'
 import './importIcons.js'
 
 import './index.scss'
-interface IconProps {
+interface IconProps extends React.SVGAttributes<SVGElement> {
   /**
    * 图标名
    */
@@ -11,15 +11,24 @@ interface IconProps {
    * 颜色
    */
   color?: string
+  /**
+   * 大小
+   */
+  size?: string
 }
 
 const Icon: React.FunctionComponent<IconProps> = (props) => {
+  const size = props.size || 16
   return (
-    <span>
-      <svg>
-        <use xlinkHref={`#${props.name}`}></use>
-      </svg>
-    </span>
+    <svg
+      className="icon"
+      width={size}
+      height={size}
+      onClick={props.onClick}
+      fill={props.color}
+    >
+      <use xlinkHref={`#${props.name}`}></use>
+    </svg>
   )
 }
 

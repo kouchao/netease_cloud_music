@@ -6,13 +6,12 @@ import {
     Link
 } from "react-router-dom";
 
-import Home from '../../pages/home'
+import Home from '@/pages/home'
 import Side from '../side'
 
 function Default() {
     return (<Router>
         <div>
-            
             <Side></Side>
             <div>
                 <Switch>
