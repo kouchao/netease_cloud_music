@@ -1,0 +1,9 @@
+@import '@/scss';
+
+@include b(header) {
+    height: 60px;
+    background: #f3f3f3;
+    // @include e(body) {
+    //     display: flex;
+    // }
+}

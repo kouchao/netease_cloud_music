@@ -19,8 +19,8 @@ function Side() {
         <Menu title="我的音乐">
             <MenuItem icon='netease' title='下载管理'></MenuItem>
         </Menu>
-        <Menu title="创建的歌单" right={
-            <Icon name='user'></Icon>
+        <Menu fold title="创建的歌单" right={
+            <Icon name='plus'></Icon>
         }>
             <MenuItem icon='like-o' title='我喜欢的音乐'></MenuItem>
         </Menu>

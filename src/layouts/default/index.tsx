@@ -8,20 +8,25 @@ import {
 
 import Home from '@/pages/home'
 import Side from '../side'
+import Header from '../header'
+import './index.scss'
 
 function Default() {
     return (<Router>
-        <div>
-            <Side></Side>
-            <div>
-                <Switch>
-                    <Route path="/home">
-                        <Home />
-                    </Route>
-                </Switch>
+        <div className="layout">
+            <div className='layout__body'>
+                <Side></Side>
+                <div className='layout__content'>
+                    <Header></Header>
+                    <Switch>
+                        <Route path="/home">
+                            <Home />
+                        </Route>
+                    </Switch>
+                </div>
             </div>
+            <div>cccccc</div>
         </div>
-
     </Router>)
 }
 

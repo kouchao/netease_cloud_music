@@ -4,9 +4,28 @@
   @extend .reset-ul;
 }
 
-.title{
+@include b(title) {
   font-size: 14px;
   color: #999;
   margin-left: 15px;
-  margin-top: 10px;
+
+  @include e(right) {
+    margin-left: auto;
+  }
+
+  @include m(fold) {
+    margin-left: 3px;
+  }
+
+  @include e(view) {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 10px;
+
+    @include m(fold) {
+      cursor: pointer;
+    }
+  }
 }
+

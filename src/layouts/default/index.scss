@@ -1,0 +1,10 @@
+@import '@/scss';
+
+@include b(layout) {
+    @include e(body) {
+        display: flex;
+    }
+    @include e(content) {
+        flex: 1
+    }
+}
