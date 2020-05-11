@@ -19,7 +19,7 @@ interface MenuItemProps {
 }
 
 const renderIcon = function (active: boolean, icon?: string) {
-  const color = active ? '#f00' : '#222'
+  const color = active ? '#c3473b' : '#2d2d2d'
   if (icon) {
     return (
       <div className="menu-item__icon">

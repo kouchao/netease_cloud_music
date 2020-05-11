@@ -20,7 +20,7 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
 const Icon: React.FunctionComponent<IconProps> = ({
   size = 16,
   onClick,
-  color,
+  color = '#2d2d2d',
   name,
 }) => {
   return (

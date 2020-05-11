@@ -18,28 +18,28 @@ export default function Control() {
       </div>
       <div className="control__item control__item--center">
         <div className="control__item-icon">
-          <Icon name="like-o" size="20"></Icon>
+          <Icon name="like-o" size="20" color="#636363"></Icon>
         </div>
         <div className="control__item-icon">
-          <Icon name="skip-back" size="20"></Icon>
+          <Icon name="skip-back" size="20" color="#c3473b"></Icon>
         </div>
         <div className="control__item-icon control__item-icon--play">
           <Icon name="play" size="20" color="#fff"></Icon>
           {/* <Icon name="pause"></Icon> */}
         </div>
         <div className="control__item-icon">
-          <Icon name="skip-forward" size="20"></Icon>
+          <Icon name="skip-forward" size="20" color="#c3473b"></Icon>
         </div>
         <div className="control__item-icon">
-          <Icon name="remove" size="20"></Icon>
+          <Icon name="remove" size="20" color="#636363"></Icon>
         </div>
       </div>
       <div className="control__item control__item--setting">
         <div className="control__item-icon">
-          <Icon name="word" size="20"></Icon>
+          <Icon name="word" size="20" color="#636363"></Icon>
         </div>
         <div className="control__item-icon">
-          <Icon name="volume" size="20"></Icon>
+          <Icon name="volume" size="20" color="#636363"></Icon>
           {/* <Icon name="volume-off" size="20"></Icon> */}
         </div>
       </div>

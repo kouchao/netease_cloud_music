@@ -13,13 +13,13 @@ const Header: React.FunctionComponent<HeaderProps> = (props) => {
       <div className="header__right">
         <Search></Search>
         <div className='header__icon'>
-        <Icon name="setting"></Icon>
+        <Icon name="setting" color="#636363"></Icon>
         </div>
         <div className='header__icon'>
-        <Icon name="message"></Icon>
+        <Icon name="message" color="#636363"></Icon>
         </div>
         <div className='header__icon'>
-        <Icon name="skin"></Icon>
+        <Icon name="skin" color="#636363"></Icon>
         </div>
       </div>
     </div>

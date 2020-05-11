@@ -6,7 +6,7 @@
 
 @include b(title) {
   font-size: 14px;
-  color: #999;
+  color: #888888;
   margin-left: 15px;
 
   @include e(right) {
@@ -28,4 +28,3 @@
     }
   }
 }
-

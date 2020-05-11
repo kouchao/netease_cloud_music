@@ -36,7 +36,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ children, title = '', right,
     <div>
       {
         (title || right || fold) && <div className={classnames('title__view', {'title__view--fold': fold})} onClick={handlerFold}>
-          {fold && <Icon name={isOpen ? 'arrow-down' : 'arrow-right'} size='12' color="#999"></Icon>}
+          {fold && <Icon name={isOpen ? 'arrow-down' : 'arrow-right'} size='12' color="#888888"></Icon>}
           {renderTitle(fold, title)}
           <div className='title__right'>{right}</div>
         </div>
