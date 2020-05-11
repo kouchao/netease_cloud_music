@@ -1,24 +1,23 @@
-@import '@/scss';
+@import "@/scss";
 
 @include b(header-nav) {
-    background: #f3f3f3;
-    height: 60px;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: #f3f3f3;
 
-    @include e(item) {
-        color: #636363;
-        padding: 15px;
-        cursor: pointer;
+  @include e(item) {
+    padding: 15px;
+    color: #636363;
+    cursor: pointer;
 
-        &:hover {
-            color: #2d2d2d
-        }
-
-        @include m(active) {
-            color: #2d2d2d;
-            font-weight: bold;
-        }
+    &:hover {
+      color: #2d2d2d;
     }
 
+    @include m(active) {
+      color: #2d2d2d;
+      font-weight: bold;
+    }
+  }
 }

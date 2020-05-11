@@ -1,17 +1,16 @@
-@import '@/scss';
+@import "@/scss";
 
 @include b(control) {
-  height: 80px;
-  background: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
   padding: 0 20px;
+  background: #fff;
   border-top: 1px solid #eee;
 
-
   @include e(item) {
-    width: calc(100%/3);
+    width: calc(100% / 3);
 
     @include m(music) {
       display: flex;
@@ -42,22 +41,20 @@
     }
   }
 
-
   @include e(photo) {
     width: 40px;
     height: 40px;
-    border-radius: 8px;
     margin-right: 10px;
+    border-radius: 8px;
   }
 
   @include e(author) {
-    font-size: 14px;
     color: #999;
+    font-size: 14px;
   }
 
   @include e(time) {
-    font-size: 14px;
     color: #999;
+    font-size: 14px;
   }
-
 }

@@ -1,27 +1,26 @@
-@import '@/scss';
+@import "@/scss";
 
 @include b(nav) {
-    background: #f6f6f6;
-    height: 60px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+  background: #f6f6f6;
 
-    @include e(item) {
-        @extend .reset-button;
-        padding: 10px;
-        border-radius: 50px;
+  @include e(item) {
+    @extend .reset-button;
 
-        &:hover {
-            background: #f2f2f2;
-        }
+    padding: 10px;
+    border-radius: 50px;
 
-        @include m(disabled) {
-
-            &:hover {
-                background: transparent;
-            }
-        }
+    &:hover {
+      background: #f2f2f2;
     }
 
+    @include m(disabled) {
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
 }

@@ -1,29 +1,28 @@
-$elementSeparator: '__';
-$modifierSeparator: '--';
+$elementSeparator: "__";
+$modifierSeparator: "--";
 
 @function containsModifier($selector) {
-  $selector: selectorToString($selector);
+  $selector: selectortostring($selector);
 
   @if str-index($selector, $modifierSeparator) {
     @return true;
-  }
-
-  @else {
+  } @else {
     @return false;
   }
 }
 
 @function selectorToString($selector) {
   $selector: inspect($selector);
-  //cast to string 
+  //cast to string
   $selector: str-slice($selector, 2, -2);
   //remove brackets
   @return $selector;
 }
 
 @function getBlock($selector) {
-  $selector: selectorToString($selector);
+  $selector: selectortostring($selector);
   $modifierStart: str-index($selector, $modifierSeparator) - 1;
+
   @return str-slice($selector, 0, $modifierStart);
 }
 
@@ -37,20 +36,18 @@ $modifierSeparator: '--';
   $selector: &;
 
   @if containsModifier($selector) {
-    $block: getBlock($selector);
+    $block: getblock($selector);
 
     @at-root {
       #{$selector} {
-        #{$block+$elementSeparator+$element} {
+        #{$block + $elementSeparator + $element} {
           @content;
         }
       }
     }
-  }
-
-  @else {
+  } @else {
     @at-root {
-      #{$selector+$elementSeparator+$element} {
+      #{$selector + $elementSeparator + $element} {
         @content;
       }
     }
@@ -59,7 +56,7 @@ $modifierSeparator: '--';
 
 @mixin m($modifier) {
   @at-root {
-    #{&}#{$modifierSeparator+$modifier} {
+    #{&}#{$modifierSeparator + $modifier} {
       @content;
     }
   }

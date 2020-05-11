@@ -1,25 +1,24 @@
-@import '@/scss';
+@import "@/scss";
 
 @include b(menu-item) {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
 
-    @extend .reset-li;
+  @extend .reset-li;
 
-    &:hover {
-        background: #ddd;
-    }
+  &:hover {
+    background: #ddd;
+  }
 
-    @include e(icon) {
-        margin-right: 10px;
-        line-height: 100%;
-    }
+  @include e(icon) {
+    margin-right: 10px;
+    line-height: 100%;
+  }
 
-    @include m(active) {
-        color: $red;
-        background: #ddd;
-    }
-
+  @include m(active) {
+    color: $red;
+    background: #ddd;
+  }
 }

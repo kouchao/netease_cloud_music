@@ -1,15 +1,15 @@
-@import '@/scss';
+@import "@/scss";
 
 @include b(search) {
-  background: #ececec;
-  padding: 5px 20px;
-  border-radius: 60px;
   display: flex;
   align-items: center;
+  padding: 5px 20px;
+  background: #ececec;
+  border-radius: 60px;
 
   @include e(input) {
     @extend .reset-input;
+
     margin-left: 5px;
   }
-
 }
