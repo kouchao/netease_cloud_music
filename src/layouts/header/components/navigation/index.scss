@@ -2,7 +2,6 @@
 
 @include b(header-nav) {
     background: #f3f3f3;
-    padding: 0 20px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -11,6 +10,10 @@
         color: #333;
         padding: 15px;
         cursor: pointer;
+
+        &:hover {
+            color: #000
+        }
 
         @include m(active) {
             color: #000;

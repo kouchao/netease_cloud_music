@@ -1,0 +1,63 @@
+@import '@/scss';
+
+@include b(control) {
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+
+
+  @include e(item) {
+    width: calc(100%/3);
+
+    @include m(music) {
+      display: flex;
+      align-items: center;
+    }
+
+    @include m(center) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include m(setting) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  @include e(item-icon) {
+    margin: 0 15px;
+    cursor: pointer;
+
+    @include m(play) {
+      padding: 15px;
+      background: $red;
+      border-radius: 60px;
+    }
+  }
+
+
+  @include e(photo) {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+
+  @include e(author) {
+    font-size: 14px;
+    color: #999;
+  }
+
+  @include e(time) {
+    font-size: 14px;
+    color: #999;
+  }
+
+}

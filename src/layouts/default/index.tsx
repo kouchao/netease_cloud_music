@@ -9,6 +9,7 @@ import {
 import Home from '@/pages/home'
 import Side from '../side'
 import Header from '../header'
+import Control from '../control'
 import './index.scss'
 
 function Default() {
@@ -25,7 +26,7 @@ function Default() {
                     </Switch>
                 </div>
             </div>
-            <div>cccccc</div>
+            <Control></Control>
         </div>
     </Router>)
 }

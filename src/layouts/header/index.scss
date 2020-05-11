@@ -3,7 +3,20 @@
 @include b(header) {
     height: 60px;
     background: #f3f3f3;
-    // @include e(body) {
-    //     display: flex;
-    // }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    @include e(right) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @include e(icon) {
+        margin-left: 20px;
+    }
+
+
 }
